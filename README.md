@@ -1,1 +1,41 @@
-EDSA-hackathon
+# edsa_packages
+
+These packages were made for the EDSA Analyze sprint hackathon. It includes two packages that perform various recursion functions, and sorting functions using three different sorting algorithms.
+
+## Installation
+
+### Building the package locally
+
+This package can be installed from local files
+
+`python setup.py sdist`
+
+### Installing this package from GitHub
+
+This package can be installed from GitHub using the pip installer
+
+`pip install git+https://github.com/RLSwanepoel/edsa-packages.git`
+
+### Updating this package from GitHub
+
+This package can be updated from GitHub using the pip installer
+
+`pip install --upgrade git+https://github.com/RLSwanepoel/edsa-packages.git`
+
+## Usage
+
+```python
+from edsa_packages import recursion, sorting
+
+recursion.sum_array([8, 3, 2, 7, 4]) # returns 24
+recursion.fibonacci(8) # returns 22
+recursion.factorial(4) # returns 22
+recursion.reverse('apple') # returns 'elppa'
+
+sorting.bubble_sort(['Ford', 'Mitsubishi', 'BMW', 'VW']) # returns ['BMW', 'Ford', 'Mitsubishi', 'VW']
+sorting.merge_sort(['Ford', 'Mitsubishi', 'BMW', 'VW']) # returns ['BMW', 'Ford', 'Mitsubishi', 'VW']
+sorting.quick_sort(['Ford', 'Mitsubishi', 'BMW', 'VW']) # returns ['BMW', 'Ford', 'Mitsubishi', 'VW']
+```
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
